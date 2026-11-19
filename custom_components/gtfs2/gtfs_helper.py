@@ -5,21 +5,15 @@ import datetime
 import logging
 import statistics
 import os
-import glob
 import json
 import requests
 import pygtfs
 from sqlalchemy.sql import text
 import multiprocessing
-from multiprocessing import Process
 from . import zip_file as zipfile
-from pathlib import Path
 
 
 import homeassistant.util.dt as dt_util
-from homeassistant.core import HomeAssistant
-from homeassistant import config_entries
-from homeassistant.const import CONF_NAME
 from homeassistant.helpers import entity_registry as er
 
 from .const import (
