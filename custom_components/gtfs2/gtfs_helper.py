@@ -965,10 +965,6 @@ def _calls_out(trips, place, origin_place):
     return rides
 
 
-def _rides_from(trips, place, origin_place):
-    """The rides of _calls_out, without their trips."""
-    return [ride for ride, _trip_id in _calls_out(trips, place, origin_place)]
-
 
 def _ways_of(trips, place, origin_place):
     """The ways out of an origin, {way: [(ride, trip_id)]}: where the bus
