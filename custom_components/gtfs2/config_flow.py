@@ -8,7 +8,7 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.data_entry_flow import FlowResult
 import homeassistant.helpers.config_validation as cv
-from homeassistant.core import HomeAssistant, callback
+from homeassistant.core import callback
 from homeassistant.helpers import selector
 
 from .const import (
@@ -24,7 +24,6 @@ from .const import (
     CONF_API_KEY,
     CONF_API_KEY_NAME,
     CONF_ACCEPT_HEADER_PB,
-    DEFAULT_ACCEPT_HEADER_PB,
     DEFAULT_API_KEY_NAME,
     CONF_VEHICLE_POSITION_URL, 
     CONF_TRIP_UPDATE_URL,

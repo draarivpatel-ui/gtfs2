@@ -20,14 +20,10 @@ from .const import (
     CONF_API_KEY_NAME,
     CONF_API_KEY_LOCATION,
     CONF_ACCEPT_HEADER_PB,
-    ATTR_DUE_IN,
-    ATTR_LATITUDE,
-    ATTR_LONGITUDE,
-    ATTR_RT_UPDATED_AT,
     ICON,
     ICONS
 )    
-from .gtfs_helper import get_gtfs, get_next_departure, check_datasource_index, create_trip_geojson, check_extracting, get_local_stops_next_departures, update_route_geojson
+from .gtfs_helper import get_gtfs, get_next_departure, check_datasource_index, check_extracting, get_local_stops_next_departures, update_route_geojson
 from .gtfs_rt_helper import get_next_services, get_rt_alerts
 from .rt_estimated_positions import create_estimated_vehicle_geojson
 
